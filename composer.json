@@ -3,7 +3,8 @@
     "name": "nguyenanhung/cms-roles-components",
     "description": "CMS Components: Roles & Permission",
     "keywords": [
-        "frontend",
+        "cms",
+        "components",
         "helper",
         "library",
         "php"
