@@ -19,10 +19,7 @@ class Config
     public static function configItem($item)
     {
         $config = self::configGlobal();
-        if (isset($config[$item])) {
-            return $config[$item];
-        }
 
-        return null;
+        return $config[$item] ?? null;
     }
 }
