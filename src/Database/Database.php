@@ -3,8 +3,8 @@
 namespace nguyenanhung\WebBuilderModules\Roles\Database;
 
 use nguyenanhung\WebBuilderModules\Roles\Base\BaseCore;
-use nguyenanhung\WebBuilderModules\Roles\Database\Traits\SignatureTable;
 use nguyenanhung\MyDatabase\Model\BaseModel;
+use nguyenanhung\WebBuilderModules\Roles\Database\Traits\AuthenticationTable;
 
 /**
  * Class Database
@@ -15,7 +15,7 @@ use nguyenanhung\MyDatabase\Model\BaseModel;
  */
 class Database extends BaseCore
 {
-    use SignatureTable;
+    use AuthenticationTable;
 
     /** @var array $database */
     protected $database;
@@ -83,7 +83,7 @@ class Database extends BaseCore
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 07/08/2022 17:45
      */
-    public function checkExitsRecord($wheres, $tableName): bool
+    protected function checkExitsRecord($wheres, $tableName): bool
     {
         $DB = $this->connection();
         $DB->setTable($tableName);
@@ -92,5 +92,23 @@ class Database extends BaseCore
         unset($DB);
 
         return $result === 1;
+    }
+
+    /**
+     * Function initDBTable
+     *
+     * @param $table
+     *
+     * @return \nguyenanhung\MyDatabase\Model\BaseModel
+     * @author   : 713uk13m <dev@nguyenanhung.com>
+     * @copyright: 713uk13m <dev@nguyenanhung.com>
+     * @time     : 23/08/2022 25:33
+     */
+    protected function initDBTable($table): BaseModel
+    {
+        $DB = $this->connection();
+        $DB->setTable($table);
+
+        return $DB;
     }
 }
