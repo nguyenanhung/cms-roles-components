@@ -2,11 +2,11 @@
 
 namespace nguyenanhung\WebBuilderModules\Roles\Base;
 
+use nguyenanhung\Classes\Helper\Common;
 use nguyenanhung\MyDebug\Benchmark;
 use nguyenanhung\MyDebug\Logger;
 use nguyenanhung\MyCache\Cache;
 use nguyenanhung\MyRequests\MyRequests;
-use nguyenanhung\WebBuilderModules\Roles\Helper\Helper;
 
 /**
  * Class BaseCore
@@ -27,7 +27,7 @@ class BaseCore
     public const KEY_API_SERVICE = 'API_SERVICE';
     public const KEY_HANDLE      = 'HANDLE';
 
-    /** @var \nguyenanhung\WebBuilderModules\Roles\Helper\Helper */
+    /** @var \nguyenanhung\Classes\Helper\Common $helper */
     protected $helper;
     /** @var \nguyenanhung\MyDebug\Benchmark */
     protected $benchmark;
@@ -62,7 +62,7 @@ class BaseCore
      */
     public function __construct(array $options = array())
     {
-        $this->helper    = new Helper();
+        $this->helper    = new Common();
         $this->logger    = new Logger();
         $this->benchmark = new Benchmark();
         $this->requests  = new MyRequests();
