@@ -1,0 +1,51 @@
+{
+    "type": "library",
+    "name": "nguyenanhung/template-web-builder-sdk-module",
+    "description": "Structure Repository Template for Web Builder Module Service Package",
+    "keywords": [
+        "frontend",
+        "helper",
+        "library",
+        "php"
+    ],
+    "homepage": "https://github.com/nguyenanhung/template-web-builder-sdk-module",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Nguyen An Hung",
+            "email": "dev@nguyenanhung.com",
+            "homepage": "https://nguyenanhung.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "symfony/polyfill": "^1.26",
+        "nguyenanhung/my-debug": "^3.0 || ^2.0",
+        "nguyenanhung/my-cache": "^3.0 || ^2.0",
+        "nguyenanhung/database": "^3.0 || ^2.0",
+        "nguyenanhung/security": "^3.0 || ^2.0",
+        "nguyenanhung/requests": "^3.0 || ^2.0",
+        "nguyenanhung/monitor": "^3.0 || ^2.0",
+        "nguyenanhung/image": "^3.0 || ^2.0",
+        "nguyenanhung/helpers": "^3.0 || ^2.0",
+        "nguyenanhung/seo": "^3.0 || ^2.0",
+        "nguyenanhung/web-builder-helper": "^1.0",
+        "nguyenanhung/web-builder-templates": "^1.0",
+        "tramtro/make-some-noise": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "nguyenanhung\\WebBuilderModules\\Your_Module\\": "src/"
+        },
+        "files": [
+            "helpers/helpers.php"
+        ]
+    }
+}
