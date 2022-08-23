@@ -1,15 +1,15 @@
 <?php
 
-namespace nguyenanhung\WebBuilderModules\Your_Module\Database;
+namespace nguyenanhung\WebBuilderModules\Roles\Database;
 
-use nguyenanhung\WebBuilderModules\Your_Module\Base\BaseCore;
-use nguyenanhung\WebBuilderModules\Your_Module\Database\Traits\SignatureTable;
+use nguyenanhung\WebBuilderModules\Roles\Base\BaseCore;
+use nguyenanhung\WebBuilderModules\Roles\Database\Traits\SignatureTable;
 use nguyenanhung\MyDatabase\Model\BaseModel;
 
 /**
  * Class Database
  *
- * @package   nguyenanhung\WebBuilderModules\Your_Module\Database
+ * @package   nguyenanhung\WebBuilderModules\Roles\Database
  * @author    713uk13m <dev@nguyenanhung.com>
  * @copyright 713uk13m <dev@nguyenanhung.com>
  */

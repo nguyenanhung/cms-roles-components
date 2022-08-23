@@ -1,6 +1,4 @@
-# Web Builder SDK Module - Template
-
-Base Module for Web Builder SDK
+# Web Builder SDK - Components - Roles & Permission
 
 ## Contact & Support
 

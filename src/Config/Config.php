@@ -1,11 +1,11 @@
 <?php
 
-namespace nguyenanhung\WebBuilderModules\Your_Module\Config;
+namespace nguyenanhung\WebBuilderModules\Roles\Config;
 
 /**
  * Class Config
  *
- * @package   nguyenanhung\WebBuilderModules\Your_Module\Config
+ * @package   nguyenanhung\WebBuilderModules\Roles\Config
  * @author    713uk13m <dev@nguyenanhung.com>
  * @copyright 713uk13m <dev@nguyenanhung.com>
  */

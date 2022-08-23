@@ -1,34 +1,33 @@
 <?php
 
-namespace nguyenanhung\WebBuilderModules\Your_Module\Base;
+namespace nguyenanhung\WebBuilderModules\Roles\Base;
 
-use nguyenanhung\WebBuilderModules\Your_Module\Template\Template;
 use nguyenanhung\MyDebug\Benchmark;
 use nguyenanhung\MyDebug\Logger;
 use nguyenanhung\MyCache\Cache;
 use nguyenanhung\MyRequests\MyRequests;
-use nguyenanhung\WebBuilderModules\Your_Module\Helper\Helper;
+use nguyenanhung\WebBuilderModules\Roles\Helper\Helper;
 
 /**
  * Class BaseCore
  *
- * @package   nguyenanhung\WebBuilderModules\Your_Module\Base
+ * @package   nguyenanhung\WebBuilderModules\Roles\Base
  * @author    713uk13m <dev@nguyenanhung.com>
  * @copyright 713uk13m <dev@nguyenanhung.com>
  *
- * @property \nguyenanhung\WebBuilderModules\Your_Module\Database\Database $db
+ * @property \nguyenanhung\WebBuilderModules\Roles\Database\Database $db
  */
 class BaseCore
 {
-    const VERSION         = '1.0.0';
-    const KEY_DATABASE    = 'DATABASE';
-    const KEY_OPTIONS     = 'OPTIONS';
-    const KEY_AUTH        = 'AUTH';
-    const KEY_CONFIG      = 'CONFIG';
-    const KEY_API_SERVICE = 'API_SERVICE';
-    const KEY_HANDLE      = 'HANDLE';
+    public const VERSION         = '1.0.0';
+    public const KEY_DATABASE    = 'DATABASE';
+    public const KEY_OPTIONS     = 'OPTIONS';
+    public const KEY_AUTH        = 'AUTH';
+    public const KEY_CONFIG      = 'CONFIG';
+    public const KEY_API_SERVICE = 'API_SERVICE';
+    public const KEY_HANDLE      = 'HANDLE';
 
-    /** @var \nguyenanhung\WebBuilderModules\Your_Module\Helper\Helper */
+    /** @var \nguyenanhung\WebBuilderModules\Roles\Helper\Helper */
     protected $helper;
     /** @var \nguyenanhung\MyDebug\Benchmark */
     protected $benchmark;
@@ -211,19 +210,6 @@ class BaseCore
     }
 
     /**
-     * Function responseToHtml
-     *
-     * @return string
-     * @author   : 713uk13m <dev@nguyenanhung.com>
-     * @copyright: 713uk13m <dev@nguyenanhung.com>
-     * @time     : 02/07/2022 09:02
-     */
-    public function responseToHtml(): string
-    {
-        return Template::nativeRender($this->response['templates'], $this->response);
-    }
-
-    /**
      * Function responseToJson
      *
      * @return false|mixed|string
@@ -235,8 +221,8 @@ class BaseCore
     {
         if (is_array($this->response) || is_object($this->response)) {
             return json_encode($this->response);
-        } else {
-            return $this->response;
         }
+
+        return $this->response;
     }
 }
