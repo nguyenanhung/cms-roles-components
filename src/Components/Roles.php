@@ -24,6 +24,7 @@ class Roles extends BaseComponents
 
     /** @var int ID của người dùng trong session */
     protected $userId;
+
     /** @var int ID của group người dùng trong session */
     protected $userGroup;
 
