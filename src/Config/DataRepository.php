@@ -11,8 +11,8 @@ namespace nguyenanhung\WebBuilderModules\Roles\Config;
  */
 class DataRepository
 {
-    const CONFIG_PATH = 'config';
-    const CONFIG_EXT  = '.php';
+    public const CONFIG_PATH = 'config';
+    public const CONFIG_EXT  = '.php';
 
     /**
      * Hàm lấy nội dung config được quy định trong thư mục config

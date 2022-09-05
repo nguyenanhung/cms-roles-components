@@ -37,8 +37,6 @@ class BaseCore
     protected $cache;
     /** @var \nguyenanhung\MyRequests\MyRequests */
     protected $requests;
-    /** @var string $cachePrefix */
-    protected $cachePrefix;
     /** @var array SDK Config Options */
     protected $options;
     /** @var array SDK Config */
