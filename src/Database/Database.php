@@ -4,6 +4,7 @@ namespace nguyenanhung\WebBuilderModules\Platforms\Roles\Database;
 
 use nguyenanhung\WebBuilderModules\Platforms\Roles\Base\BaseCore;
 use nguyenanhung\MyDatabase\Model\BaseModel;
+use nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Interfaces\AuthenticationInterface;
 use nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Traits\AuthenticationTable;
 
 /**
@@ -13,7 +14,7 @@ use nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Traits\Authenticatio
  * @author    713uk13m <dev@nguyenanhung.com>
  * @copyright 713uk13m <dev@nguyenanhung.com>
  */
-class Database extends BaseCore
+class Database extends BaseCore implements AuthenticationInterface
 {
     use AuthenticationTable;
 
