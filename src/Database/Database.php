@@ -2,8 +2,8 @@
 
 namespace nguyenanhung\WebBuilderModules\Platforms\Roles\Database;
 
-use nguyenanhung\WebBuilderModules\Platforms\Roles\Base\BaseCore;
 use nguyenanhung\MyDatabase\Model\BaseModel;
+use nguyenanhung\WebBuilderModules\Platforms\BaseComponents\Base\BaseCore;
 use nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Interfaces\AuthenticationInterface;
 use nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Traits\AuthenticationTable;
 

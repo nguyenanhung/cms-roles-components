@@ -10,6 +10,9 @@
 
 namespace nguyenanhung\WebBuilderModules\Platforms\Roles\Components;
 
+use nguyenanhung\WebBuilderModules\Platforms\BaseComponents\Components\BaseComponents;
+use nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Database;
+
 /**
  * Class Roles
  *
@@ -40,6 +43,7 @@ class Roles extends BaseComponents
     {
         parent::__construct($options);
         $this->logger->setLoggerSubPath(__CLASS__);
+        $this->db = new Database($options);
     }
 
     public function setUserId($userId): self
