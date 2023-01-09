@@ -19,7 +19,7 @@ use nguyenanhung\MyRequests\MyRequests;
  */
 class BaseCore
 {
-    public const VERSION         = '1.0.0';
+    public const VERSION         = '1.0.1';
     public const KEY_DATABASE    = 'DATABASE';
     public const KEY_OPTIONS     = 'OPTIONS';
     public const KEY_AUTH        = 'AUTH';
