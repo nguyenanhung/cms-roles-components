@@ -47,7 +47,8 @@
             "nguyenanhung\\WebBuilderModules\\Platforms\\Roles\\": "src/"
         },
         "files": [
-            "helpers/helpers.php"
+            "helpers/check_permission.php",
+            "helpers/check_permission_sidebar.php"
         ]
     }
 }
