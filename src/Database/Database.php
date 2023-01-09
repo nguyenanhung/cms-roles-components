@@ -1,15 +1,15 @@
 <?php
 
-namespace nguyenanhung\WebBuilderModules\Roles\Database;
+namespace nguyenanhung\WebBuilderModules\Platforms\Roles\Database;
 
-use nguyenanhung\WebBuilderModules\Roles\Base\BaseCore;
+use nguyenanhung\WebBuilderModules\Platforms\Roles\Base\BaseCore;
 use nguyenanhung\MyDatabase\Model\BaseModel;
-use nguyenanhung\WebBuilderModules\Roles\Database\Traits\AuthenticationTable;
+use nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Traits\AuthenticationTable;
 
 /**
  * Class Database
  *
- * @package   nguyenanhung\WebBuilderModules\Roles\Database
+ * @package   nguyenanhung\WebBuilderModules\Platforms\Roles\Database
  * @author    713uk13m <dev@nguyenanhung.com>
  * @copyright 713uk13m <dev@nguyenanhung.com>
  */

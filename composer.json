@@ -43,7 +43,7 @@
     },
     "autoload": {
         "psr-4": {
-            "nguyenanhung\\WebBuilderModules\\Roles\\": "src/"
+            "nguyenanhung\\WebBuilderModules\\Platforms\\Roles\\": "src/"
         },
         "files": [
             "helpers/helpers.php"

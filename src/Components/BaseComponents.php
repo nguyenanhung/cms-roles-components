@@ -8,15 +8,15 @@
  * Time: 09:15
  */
 
-namespace nguyenanhung\WebBuilderModules\Roles\Components;
+namespace nguyenanhung\WebBuilderModules\Platforms\Roles\Components;
 
-use nguyenanhung\WebBuilderModules\Roles\Base\BaseCore;
-use nguyenanhung\WebBuilderModules\Roles\Database\Database;
+use nguyenanhung\WebBuilderModules\Platforms\Roles\Base\BaseCore;
+use nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Database;
 
 /**
  * Class BaseComponents
  *
- * @package   nguyenanhung\WebBuilderModules\Roles\Components
+ * @package   nguyenanhung\WebBuilderModules\Platforms\Roles\Components
  * @author    713uk13m <dev@nguyenanhung.com>
  * @copyright 713uk13m <dev@nguyenanhung.com>
  */

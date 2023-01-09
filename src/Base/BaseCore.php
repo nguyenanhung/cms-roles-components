@@ -1,6 +1,6 @@
 <?php
 
-namespace nguyenanhung\WebBuilderModules\Roles\Base;
+namespace nguyenanhung\WebBuilderModules\Platforms\Roles\Base;
 
 use nguyenanhung\Classes\Helper\Common;
 use nguyenanhung\MyDebug\Benchmark;
@@ -11,11 +11,11 @@ use nguyenanhung\MyRequests\MyRequests;
 /**
  * Class BaseCore
  *
- * @package   nguyenanhung\WebBuilderModules\Roles\Base
+ * @package   nguyenanhung\WebBuilderModules\Platforms\Roles\Base
  * @author    713uk13m <dev@nguyenanhung.com>
  * @copyright 713uk13m <dev@nguyenanhung.com>
  *
- * @property \nguyenanhung\WebBuilderModules\Roles\Database\Database $db
+ * @property \nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Database $db
  */
 class BaseCore
 {

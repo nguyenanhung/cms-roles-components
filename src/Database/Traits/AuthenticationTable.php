@@ -8,12 +8,12 @@
  * Time: 09:22
  */
 
-namespace nguyenanhung\WebBuilderModules\Roles\Database\Traits;
+namespace nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Traits;
 
 /**
  * Trait AuthenticationTable
  *
- * @package   nguyenanhung\WebBuilderModules\Roles\Database\Traits
+ * @package   nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Traits
  * @author    713uk13m <dev@nguyenanhung.com>
  * @copyright 713uk13m <dev@nguyenanhung.com>
  */
