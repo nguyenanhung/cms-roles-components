@@ -25,10 +25,10 @@ class Roles extends BaseComponents
     public const FULLY_PERMISSION = 'fully';
     public const ALL_PERMISSION = 'all';
 
-    /** @var int ID của người dùng trong session */
+    /** @var string|int ID của người dùng trong session */
     protected $userId;
 
-    /** @var int ID của group người dùng trong session */
+    /** @var string|int ID của group người dùng trong session */
     protected $userGroup;
 
     /**
