@@ -1,12 +1,4 @@
 <?php
-/**
- * Project cms-roles-components
- * Created by PhpStorm
- * User: 713uk13m <dev@nguyenanhung.com>
- * Copyright: 713uk13m <dev@nguyenanhung.com>
- * Date: 09/01/2023
- * Time: 11:32
- */
 
 namespace nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Interfaces;
 
