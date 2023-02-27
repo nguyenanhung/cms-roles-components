@@ -10,7 +10,8 @@
 
 namespace nguyenanhung\WebBuilderModules\Platforms\Roles\Components;
 
-use nguyenanhung\WebBuilderModules\Platforms\BaseComponents\Components\BaseComponents;
+
+use nguyenanhung\Platforms\WebBuilderSDK\Initialize\BaseComponents\Components\BaseComponents;
 use nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Database;
 
 /**
@@ -22,8 +23,8 @@ use nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Database;
  */
 class Roles extends BaseComponents
 {
-    public const FULLY_PERMISSION = 'fully';
-    public const ALL_PERMISSION = 'all';
+    const FULLY_PERMISSION = 'fully';
+    const ALL_PERMISSION = 'all';
 
     /** @var string|int ID của người dùng trong session */
     protected $userId;
@@ -46,21 +47,21 @@ class Roles extends BaseComponents
         $this->db = new Database($options);
     }
 
-    public function setUserId($userId): self
+    public function setUserId($userId)
     {
         $this->userId = $userId;
 
         return $this;
     }
 
-    public function setUserGroup($userGroup): self
+    public function setUserGroup($userGroup)
     {
         $this->userGroup = $userGroup;
 
         return $this;
     }
 
-    public function checkPermission($modules = null, $action = null, $mode = 'user_group'): bool
+    public function checkPermission($modules = null, $action = null, $mode = 'user_group')
     {
         $mode = strtolower($mode);
         if ($modules === null || $action === null) {
@@ -98,7 +99,7 @@ class Roles extends BaseComponents
         return $fully_permission || $modules_all_permission || $modules_action_permission;
     }
 
-    public function checkPermissionSidebar($sidebar_filename = null, $config_sidebar_sub = null, $mode = 'user_group'): bool
+    public function checkPermissionSidebar($sidebar_filename = null, $config_sidebar_sub = null, $mode = 'user_group')
     {
         if ($sidebar_filename === null || $config_sidebar_sub === null) {
             return false;

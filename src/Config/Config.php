@@ -20,6 +20,10 @@ class Config
     {
         $config = self::configGlobal();
 
-        return $config[$item] ?? null;
+        if (isset($config[$item])) {
+            return $config[$item];
+        }
+
+        return null;
     }
 }

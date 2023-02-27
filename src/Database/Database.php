@@ -3,7 +3,7 @@
 namespace nguyenanhung\WebBuilderModules\Platforms\Roles\Database;
 
 use nguyenanhung\MyDatabase\Model\BaseModel;
-use nguyenanhung\WebBuilderModules\Platforms\BaseComponents\Base\BaseCore;
+use nguyenanhung\Platforms\WebBuilderSDK\Initialize\BaseComponents\Base\BaseCore;
 use nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Interfaces\AuthenticationInterface;
 use nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Traits\AuthenticationTable;
 
@@ -45,7 +45,7 @@ class Database extends BaseCore implements AuthenticationInterface
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 22/06/2022 38:16
      */
-    public function setDatabase($database): Database
+    public function setDatabase($database)
     {
         $this->database = $database;
 
@@ -60,12 +60,12 @@ class Database extends BaseCore implements AuthenticationInterface
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 22/06/2022 40:58
      */
-    public function connection(): BaseModel
+    public function connection()
     {
-        $DB                      = new BaseModel();
-        $DB->debugStatus         = $this->options['debugStatus'];
-        $DB->debugLevel          = $this->options['debugLevel'];
-        $DB->debugLoggerPath     = $this->options['loggerPath'];
+        $DB = new BaseModel();
+        $DB->debugStatus = $this->options['debugStatus'];
+        $DB->debugLevel = $this->options['debugLevel'];
+        $DB->debugLoggerPath = $this->options['loggerPath'];
         $DB->debugLoggerFilename = 'Log-' . date('Y-m-d') . '.log';
         $DB->setDatabase($this->database);
         $DB->__construct($this->database);
@@ -84,7 +84,7 @@ class Database extends BaseCore implements AuthenticationInterface
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 07/08/2022 17:45
      */
-    protected function checkExitsRecord($wheres, $tableName): bool
+    protected function checkExitsRecord($wheres, $tableName)
     {
         $DB = $this->connection();
         $DB->setTable($tableName);
@@ -105,7 +105,7 @@ class Database extends BaseCore implements AuthenticationInterface
      * @copyright: 713uk13m <dev@nguyenanhung.com>
      * @time     : 23/08/2022 25:33
      */
-    protected function initDBTable($table): BaseModel
+    protected function initDBTable($table)
     {
         $DB = $this->connection();
         $DB->setTable($table);

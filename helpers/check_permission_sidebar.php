@@ -8,7 +8,7 @@
  * Time: 15:32
  */
 if (!function_exists('roles_check_permission_sidebar_by_user_id')) {
-    function roles_check_permission_sidebar_by_user_id($sdkConfig, $sidebar_filename, $config_sidebar_sub, $user_id): bool
+    function roles_check_permission_sidebar_by_user_id($sdkConfig, $sidebar_filename, $config_sidebar_sub, $user_id)
     {
         $roles = new \nguyenanhung\WebBuilderModules\Platforms\Roles\Components\Roles($sdkConfig['OPTIONS']);
         $roles->setSdkConfig($sdkConfig)->setUserId($user_id);
@@ -18,7 +18,7 @@ if (!function_exists('roles_check_permission_sidebar_by_user_id')) {
 }
 
 if (!function_exists('roles_check_permission_sidebar_by_user_group')) {
-    function roles_check_permission_sidebar_by_user_group($sdkConfig, $sidebar_filename, $config_sidebar_sub, $user_group): bool
+    function roles_check_permission_sidebar_by_user_group($sdkConfig, $sidebar_filename, $config_sidebar_sub, $user_group)
     {
         $roles = new \nguyenanhung\WebBuilderModules\Platforms\Roles\Components\Roles($sdkConfig['OPTIONS']);
         $roles->setSdkConfig($sdkConfig)->setUserGroup($user_group);
@@ -28,7 +28,7 @@ if (!function_exists('roles_check_permission_sidebar_by_user_group')) {
 }
 
 if (!function_exists('roles_check_permission_sidebar')) {
-    function roles_check_permission_sidebar($sdkConfig, $sidebar_filename, $config_sidebar_sub, $user_id, $user_group): bool
+    function roles_check_permission_sidebar($sdkConfig, $sidebar_filename, $config_sidebar_sub, $user_id, $user_group)
     {
         $roleById = roles_check_permission_sidebar_by_user_id($sdkConfig, $sidebar_filename, $config_sidebar_sub, $user_id);
         $roleByGroup = roles_check_permission_sidebar_by_user_group($sdkConfig, $sidebar_filename, $config_sidebar_sub, $user_group);

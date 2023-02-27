@@ -37,7 +37,7 @@ trait AuthenticationTable
         return $result;
     }
 
-    public function countAuthenticationMetaByUserGroup($id_group = null, $id_authentication = null): int
+    public function countAuthenticationMetaByUserGroup($id_group = null, $id_authentication = null)
     {
         $wheres = array();
         if (!empty($id_group)) {
@@ -53,7 +53,7 @@ trait AuthenticationTable
         return $result;
     }
 
-    public function countAuthenticationMetaByUserID($user_id = null, $authentication_id = null): int
+    public function countAuthenticationMetaByUserID($user_id = null, $authentication_id = null)
     {
         $wheres = array();
         if (!empty($user_id)) {
@@ -88,7 +88,7 @@ trait AuthenticationTable
         return $result;
     }
 
-    public function countAuthenticationServicesMetaByUserGroup($id_group = null, $id_authentication = null): int
+    public function countAuthenticationServicesMetaByUserGroup($id_group = null, $id_authentication = null)
     {
         $wheres = array();
         if (!empty($id_group)) {
@@ -104,7 +104,7 @@ trait AuthenticationTable
         return $result;
     }
 
-    public function countAuthenticationServicesMetaByUserID($user_id = null, $authentication_id = null): int
+    public function countAuthenticationServicesMetaByUserID($user_id = null, $authentication_id = null)
     {
         $wheres = array();
         if (!empty($user_id)) {
@@ -139,7 +139,7 @@ trait AuthenticationTable
         return $result;
     }
 
-    public function countAuthenticationSidebarMetaByUserGroup($id_group = null, $id_authentication = null): int
+    public function countAuthenticationSidebarMetaByUserGroup($id_group = null, $id_authentication = null)
     {
         $wheres = array();
         if (!empty($id_group)) {
@@ -155,7 +155,7 @@ trait AuthenticationTable
         return $result;
     }
 
-    public function countAuthenticationSidebarMetaByUserID($user_id = null, $authentication_id = null): int
+    public function countAuthenticationSidebarMetaByUserID($user_id = null, $authentication_id = null)
     {
         $wheres = array();
         if (!empty($user_id)) {
