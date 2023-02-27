@@ -45,6 +45,7 @@ class Roles extends BaseComponents
         parent::__construct($options);
         $this->logger->setLoggerSubPath(__CLASS__);
         $this->db = new Database($options);
+        $this->db->setSdkConfig($this->sdkConfig);
     }
 
     public function setUserId($userId)
