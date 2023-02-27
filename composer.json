@@ -26,11 +26,11 @@
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
+        "web-builder-sdk/framework": "^1.0",
         "web-builder-sdk/initialize-base-components": "^1.0"
     },
     "require-dev": {
         "nguyenanhung/image": "^3.0 || ^2.0 || ^1.0",
-        "web-builder-sdk/framework": "^1.0",
         "tramtro/make-some-noise": "^1.0",
         "symfony/polyfill": "^1.26"
     },
