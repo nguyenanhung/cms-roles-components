@@ -1,6 +1,6 @@
 <?php
 
-namespace nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Interfaces;
+namespace nguyenanhung\WebBuilderModules\Platforms\Roles\Database;
 
 interface AuthenticationInterface
 {

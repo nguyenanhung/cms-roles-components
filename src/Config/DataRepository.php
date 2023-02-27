@@ -11,9 +11,6 @@ namespace nguyenanhung\WebBuilderModules\Platforms\Roles\Config;
  */
 class DataRepository
 {
-    const CONFIG_PATH = 'config';
-    const CONFIG_EXT = '.php';
-
     /**
      * Hàm lấy nội dung config được quy định trong thư mục config
      *
@@ -26,7 +23,7 @@ class DataRepository
      */
     public static function getData($configName)
     {
-        $path = __DIR__ . DIRECTORY_SEPARATOR . self::CONFIG_PATH . DIRECTORY_SEPARATOR . $configName . self::CONFIG_EXT;
+        $path = __DIR__ . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . trim($configName) . '.php';
         if (is_file($path) && file_exists($path)) {
             return require $path;
         }

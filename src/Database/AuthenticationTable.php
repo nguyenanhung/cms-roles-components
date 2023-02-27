@@ -1,6 +1,6 @@
 <?php
 
-namespace nguyenanhung\WebBuilderModules\Platforms\Roles\Database\Traits;
+namespace nguyenanhung\WebBuilderModules\Platforms\Roles\Database;
 
 trait AuthenticationTable
 {
