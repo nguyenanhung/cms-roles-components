@@ -1,4 +1,7 @@
-[![Latest Stable Version](http://poser.pugx.org/nguyenanhung/cms-roles-components/v)](https://packagist.org/packages/nguyenanhung/cms-roles-components) [![Total Downloads](http://poser.pugx.org/nguyenanhung/cms-roles-components/downloads)](https://packagist.org/packages/nguyenanhung/cms-roles-components) [![Latest Unstable Version](http://poser.pugx.org/nguyenanhung/cms-roles-components/v/unstable)](https://packagist.org/packages/nguyenanhung/cms-roles-components) [![License](http://poser.pugx.org/nguyenanhung/cms-roles-components/license)](https://packagist.org/packages/nguyenanhung/cms-roles-components) [![PHP Version Require](http://poser.pugx.org/nguyenanhung/cms-roles-components/require/php)](https://packagist.org/packages/nguyenanhung/cms-roles-components)
+[![Latest Stable Version](https://img.shields.io/packagist/v/nguyenanhung/cms-roles-components.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/cms-roles-components)
+[![Total Downloads](https://img.shields.io/packagist/dt/nguyenanhung/cms-roles-components.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/cms-roles-components)
+[![License](https://img.shields.io/packagist/l/nguyenanhung/cms-roles-components.svg?style=flat-square)](https://packagist.org/packages/nguyenanhung/cms-roles-components)
+[![PHP Version Require](https://img.shields.io/packagist/dependency-v/nguyenanhung/cms-roles-components/php)](https://packagist.org/packages/nguyenanhung/cms-roles-components)
 
 # Web Builder SDK - Components - Roles & Permission
 
